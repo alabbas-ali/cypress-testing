@@ -1,0 +1,17 @@
+version: 2.1
+
+orbs:
+    cypress: cypress-io/cypress@1.16.1
+workflows:
+    daily:
+        triggers:
+            - schedule:
+                cron: "0 0 * * *"
+                filters:
+                    branches:
+                        only:
+                            - master
+    build:
+        jobs:
+            - cypress/run:
+                record: true

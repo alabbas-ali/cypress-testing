@@ -1,0 +1,8 @@
+{
+    "fixturesFolder":false ,
+    "integrationFolder":"e2e-test",
+    "videosFolder":"videos",
+    "screenshotsFolder":"snapshots",
+    "pluginsFile":"plugins/index.js",
+    "supportFile":"support/index.js"
+}
